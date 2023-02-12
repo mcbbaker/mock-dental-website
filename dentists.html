@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+	<head>
+		<title>2nd Avenue Dental</title>
+		<link rel="icon" type="image/x-icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!-- class "centerWrapper": frequently used wrapper that holds an entire panel (section) and provides styling to automatically center it horizontally -->
+	
+		<!-- section for the title
+		id "titlePanel": container for the entire title panel
+		id "title": container for the webpage name and logo
+		-->
+		<div class="centerWrapper">
+			<div id="titlePanel">
+				<div id="title">
+					<a class="titleLink" href="./home.html">2nd Avenue Dental</a>
+					<a id="toothLogo" href="./home.html"><img src="./images/logo.jpg" alt="Tooth Logo"></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- section for the nav bar
+		id "navPanel": container for the entire nav panel
+		class "nonCurrentLink" "currentLink": used to signify which link the website is currently on for styling purposes 
+		-->
+		<div class="centerWrapper" id="sticky">
+			<div id="navPanel">
+				<a class="nonCurrentLink" href="./home.html">Home</a>
+				<a class="nonCurrentLink" href="./practice.html">Our Practice</a>
+				<a class="currentLink" href="./dentists.html">Our Dentists</a>
+				<a class="nonCurrentLink" href="./services.html">Services</a>
+				<a class="nonCurrentLink" href="./contact.html">Contact Us</a>
+				<button class="bookButton clickableItem">BOOK APPOINTMENT</button>
+			</div>
+		</div>
+		
+		<!-- section for the image carousel 
+		id "carouselPanel": container for the images only in the image carousel
+		class "carouselImage": applied to all images in the carousel for JS functionality
+		-->
+		<div class="centerWrapper">
+			<div id="carouselPanel">
+				<img src="./images/carousel1.jpg" alt="Girl Smiling with Dentist" class="carouselImage">
+				<img src="./images/carousel2.jpg" alt="Tooth XRay" class="carouselImage">
+				<img src="./images/carousel3.jpg" alt="Brushing Teeth" class="carouselImage">
+				<p>Meet Our Dentists</p>
+			</div>
+		</div>
+		
+		<!-- section for the buttons for the image carousel
+		id "carouselButtonPanel": container for the buttons below the image carousel
+		class "carouselButton": class applied to all carousel buttons for JS functionality and styling
+		-->
+		<div class="centerWrapper">
+			<div id="carouselButtonPanel">
+				<span class="carouselButton clickableItem" id="carouselButton1"></span>
+				<span class="carouselButton clickableItem" id="carouselButton2"></span>
+				<span class="carouselButton clickableItem" id="carouselButton3"></span>
+			</div>
+		</div>
+		
+		<!-- section for the main body of the "Our Dentists" page 
+		id "dentistPanel": container for the main body of the "Our Dentists" page
+		class "dentistBox": container for a dentists image and information
+		class "dentistImage": container for a dentists image
+		class "dentistInfo": container for the dentists information
+		-->
+		<div class="centerWrapper">
+			<div id="dentistPanel">
+				<!-- first dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist1.jpg" alt="Dentist 1">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. Jane Doe</b></p>
+						<p>Sodales ut eu sem integer vitae justo. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Orci a scelerisque purus semper eget duis. Erat imperdiet sed euismod nisi porta lorem. Arcu odio ut sem nulla pharetra diam sit amet. Ultricies mi quis hendrerit dolor.</p>
+					</div>
+				</div>
+				
+				<!-- second dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist2.jpg" alt="Dentist 2">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. Jane Doe</b></p>
+						<p>Curabitur vitae nunc sed velit dignissim sodales ut eu. Id volutpat lacus laoreet non curabitur gravida arcu ac. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Mi quis hendrerit dolor magna eget est lorem ipsum. In est ante in nibh mauris cursus mattis molestie.</p>
+					</div>
+				</div>
+				
+				<!-- third dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist3.jpg" alt="Dentist 3">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. John Doe</b></p>
+						<p>Enim lobortis scelerisque fermentum dui. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Scelerisque in dictum non consectetur. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Adipiscing elit duis tristique sollicitudin nibh sit.</p>
+					</div>
+				</div>
+				
+				<!-- fourth dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist4.jpg" alt="Dentist 4">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. Jane Doe</b></p>
+						<p>Commodo nulla facilisi nullam vehicula ipsum. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Accumsan lacus vel facilisis volutpat est velit egestas dui. Tempus quam pellentesque nec nam. Proin nibh nisl condimentum id venenatis a condimentum vitae.</p>
+					</div>
+				</div>
+				
+				<!-- fifth dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist5.jpg" alt="Dentist 5">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. Jane Doe</b></p>
+						<p>Quam elementum pulvinar etiam non quam lacus. Praesent tristique magna sit amet purus gravida. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Dui vivamus arcu felis bibendum ut tristique. Et tortor consequat id porta nibh venenatis cras sed.</p>
+					</div>
+				</div>
+				
+				<!-- sixth dentist -->
+				<div class="dentistBox">
+					<div class="dentistImage">
+						<img src="./images/dentist6.jpg" alt="Dentist 6">
+					</div>
+					<div class="dentistInfo">
+						<p><b>Dr. Jane Doe</b></p>
+						<p>In mollis nunc sed id semper risus. Justo donec enim diam vulputate ut pharetra sit amet. At quis risus sed vulputate odio ut enim blandit. Morbi tristique senectus et netus et malesuada fames ac turpis. Malesuada fames ac turpis egestas maecenas.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- the section for the footer 
+		id "footerPanel": container for the entire footer
+		class "footerBox": container to hold a subsection of the footer
+		class "footerContentBox": container to hold the content beneath a heading (ie the location image under the location heading)
+		-->
+		<footer>
+			<div class="centerWrapper">
+				<div id="footerPanel">
+					<!-- section for the hours of operation -->
+					<div class="footerBox">
+						<div>
+							<p><b>Hours of Operation</b></p>
+						</div>
+						<!-- the days and hours contained within a contect box, each having their own container for styling purposes -->
+						<div class="footerContentBox" id="footerHoursBox">
+							<div id="footerWeekdays">
+								<p>Monday</p>
+								<p>Tuesday</p>
+								<p>Wednesday</p>
+								<p>Thursday</p>
+								<p>Friday</p>
+								<p>Saturday</p>
+								<p>Sunday</p>
+							</div>
+							<div id="footerHours">
+								<p>8am-5pm</p>
+								<p>8am-5pm</p>
+								<p>8am-5pm</p>
+								<p>8am-5pm</p>
+								<p>8am-5pm</p>
+								<p>Closed</p>
+								<p>Closed</p>
+							</div>
+						</div>
+					</div>
+					<!-- the section for the contact information -->
+					<div class="footerBox">
+						<p><b>Contact Us</b></p>
+						<div class="footerContentBox" id="footerContactBox">
+							<a href="" class="contactLink">(306) 222-2222</a>
+							<a href="" class="contactLink">contact@2ndavenuedental.ca</a>
+							<p>22 2nd Avenue North</p>
+							<p>Saskatoon, SK</p>
+							<button class="bookButton clickableItem">BOOK APPOINTMENT</button>
+						</div>
+					</div>
+					<!-- the section for the location -->
+					<div class="footerBox">
+						<p><b>Location</b></p>
+						<div class="footerContentBox">
+							<a class="clickableItem"><img src="./images/pinpoint.png" alt="Clinic Location"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
